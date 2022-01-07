@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/img/barril.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
- 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    
     <script src="./scripts.js"></script>
     
 </head>
@@ -20,9 +21,15 @@
    
 
     <header>
-        <h1>Jornada da Vila </h1>
+        <h1>Jornada da Vila </h1>        
+        <ul>
+            <li class="lista-social"><a href="https://www.linkedin.com/in/caiosenna93/"><i class="fab fa-linkedin"></i></a></li>
+            <li class="lista-social"><a href="https://github.com/cclsenna"><i class="fab fa-github"></i></a></li>
+        </ul>
+    
     </header>
 
+   
     
     
     <main class="container">
@@ -30,8 +37,9 @@
 
         <div id="container-intro">
             <h2> A JORNADA DA VILA</h2>
-            <p>A turma da vila está se preparando para fazer a tão sonhada de férias.Será que você consegue ajudá-los e fazer com que todos cheguem com sucesso no ônibus ?</p>        
-            <button  id="botao-iniciar" onclick="botaoInicio()" >INICIAR</button>
+            <p>Finalmente chegou a temporada de férias e nossos queridos amigos da vila estão se preparando para a grande viagem para Acapulco. 
+                Escolha seu personagem e lute para chegar a tempo até o ônibus e não ficar de fora.</p>        
+            <button  class="botao" id="botao-iniciar" onclick="botaoInicio()" >INICIAR</button>
 
         </div> 
         
@@ -45,9 +53,9 @@
 
                 <div class="container-choice-interno-char">
                     
-                    <a class="link-char" href="./chaves_fase_1.html">
+                    <a class="link-char" href="./chaves/chaves_fase_1.html">
                         <img class="img-char" src="./assets/img/chaves.jpg" alt="Chaves">
-                        Chaves</a>
+                        CHAVES</a>
                     
     
                 </div>
@@ -57,23 +65,28 @@
                     
                     <a class="link-char" href="./chaves_fase_1.html">
                         <img class="img-char" src="./assets/img/kiko.jpg" alt="Quico">
-                        Quico</a>
+                        QUICO</a>
     
                 </div>
     
                 <div class="container-choice-interno-char">
                     <a class="link-char" href="./chaves_fase_1.html">
                         <img class="img-char" src="./assets/img/chiquinha.png" alt="chiquinha">
-                        Chiquinha</a>
+                        CHIQUINHA</a>
     
                 </div>
 
             </div>
 
+            <button class="botao" id="botao-voltar" onclick="botaoVolta()">VOLTAR</button>
+
+            
+
             
             
             
         </div>
+        
 
         
 
