@@ -1,3 +1,7 @@
+:root{
+    --main-dialog-color:rgba(255, 255, 255,0.85);
+}
+
 html{
     height:100vh;
 }
@@ -6,18 +10,19 @@ body{
     background-color:#7fffd4;
     background-image:url(../img/chapeu_pintado.png);
     background-size:400px;
+    font-family: 'Source Sans Pro', sans-serif;
 
     
 }
 
-header h1{
+.tiulo{
     text-shadow:#000000 2px 5px 0;
     display:inline-block;
     width: fit-content;
     margin: auto 0;
 }
 
-h1:hover{
+.tiulo:hover{
     transform: translate(3px,3px);
 
 }
@@ -63,17 +68,30 @@ header{
 }
 
 #container-intro{
-    height:250px;
+    height:180px;
     width: 650px;
     border:solid black 1px;
     margin:5% auto 0;
-    padding: 30px;
+    padding:35px;
     text-align: center;
     box-shadow: 1px 1px 10px 2px black;
     border-radius:2px;
-    background-color:rgba(255, 255, 255,0.85);
-    font-size:20px;
-    
+    background-color: var(--main-dialog-color);
+    font-size:20px;    
+}
+
+.game-over
+{
+    height:180px;
+    width: 650px;
+    border:solid black 1px;
+    margin:20% auto 0;
+    padding:35px;
+    text-align: center;
+    box-shadow: 1px 1px 10px 2px black;
+    border-radius:2px;
+    background-color: var(--main-dialog-color);
+    font-size:20px;    
 }
 
 #container-intro h2{
@@ -151,11 +169,12 @@ footer {
     width:100%;
     height:40px;
     line-height:40px;
-    background-color:rgba(255, 255, 255,0.3);
+    background-color:var(--main-dialog-color);
     color:rgb(94, 51, 51);
     text-align:center;
     position: absolute;
     bottom:0;
+    font-weight: bold;
     
 }
 
