@@ -82,7 +82,70 @@ let respostaFase=(fase)=>{
                 }
 
             case 'fase1-qo':
-                
+                let resposta4=prompt('O que você faz ?\nA: Ignora ele completamente e continua indo para a vendinha.\nB: Compra um sanduíche pra ele e pra você. ');
+                if(resposta4.toUpperCase()=='B'){
+                    alert('Você deseobedeceu sua mãe comprando o sanduíche ,mas pelo menos seu amigo ficou feliz com vbocê.');
+                    window.location.href='../quico/g-over-quico1.html';
+                    respostaLoop=true;
+                    break;
+
+                }
+                else if(resposta4.toUpperCase()=='A'){
+                    alert('Chaves irá te deixar em paz...por enquanto.')
+                    window.location.href='../quico/quico_fase_2.html';
+                    respostaLoop=true;
+                    break;
+
+                }
+
+                else{
+                    alert('Opção Inválida. Tente novamente !');
+                    break;
+                }
+
+
+
+            case 'fase2-qo':
+                let resposta5=prompt('O que você faz ? \nA: Sai correndo em direção ao gato e o salva \n B: Espera o gato voltar');
+                if(resposta5.toUpperCase()=='B'){
+                    window.location.href='../chaves/endgame.html';
+                    respostaLoop=true;
+                    break;
+
+                }
+                else if(resposta5.toUpperCase()='A'){
+                    window.location.href='../chaves/g-over-chaves4.html';
+                    respostaLoop=true;
+                    break;
+
+                }
+
+                else{
+                    alert('Opção Inválida. Tente novamente !');
+                    break;
+                }
+
+
+            case 'fase3-qo':
+                let resposta6=prompt('O que você faz ? \nA: Sai correndo em direção ao gato e o salva \n B: Espera o gato voltar');
+                if(resposta6.toUpperCase()=='B'){
+                    window.location.href='../chaves/endgame.html';
+                    respostaLoop=true;
+                    break;
+
+                }
+                else if(resposta6.toUpperCase()='A'){
+                    window.location.href='../chaves/g-over-chaves4.html';
+                    respostaLoop=true;
+                    break;
+
+                }
+
+                else{
+                    alert('Opção Inválida. Tente novamente !');
+                    break;
+                }
+
 
 
 
@@ -96,8 +159,5 @@ let respostaFase=(fase)=>{
 }
 
 
-function validaResposta(){
-
-}
 
 
