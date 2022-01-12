@@ -14,6 +14,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    text-align:center;
 
     
 }
@@ -115,8 +116,11 @@ header{
     border-radius:8px;
     color:white;
     font-weight: bold;
-    background: rgba(94, 51, 51,0.9);
+    background: rgba(94, 51, 51,0.9);    
+}
 
+#botao-voltar{
+    margin-top: 3%;
 
 }
 
@@ -144,9 +148,15 @@ header{
 }
 
 #container-choice h2{
-    margin:5vh 0;
+    margin:5vh auto;
     font-size:20px;
     font-weight: bold;
+    background-color: var(--main-dialog-color);
+    width: fit-content;
+    border-radius: 4px;
+    padding: 10px;
+    border: solid 2px black ;
+    
 
 }
 

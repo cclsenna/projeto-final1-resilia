@@ -84,7 +84,7 @@ let respostaFase=(fase)=>{
             case 'fase1-qo':
                 let resposta4=prompt('O que você faz ?\nA: Ignora ele completamente e continua indo para a vendinha.\nB: Compra um sanduíche pra ele e pra você.\nResponda com A ou B');
                 if(resposta4.toUpperCase()=='B'){
-                    alert('Você desobedeceu sua mãe comprando o sanduíche ,mas pelo menos seu amigo ficou feliz com você.');
+                    alert('Você desobedeceu sua mãe comprando o sanduíche, mas pelo menos seu amigo ficou feliz com você.');
                     window.location.href='../quico/g-over-quico1.html';
                     respostaLoop=true;
                     break;
