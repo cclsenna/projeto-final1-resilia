@@ -248,7 +248,7 @@ header{
     }
 
     footer{
-        position: relative;
+        position: absolute;
     }
 
     #container-intro{
