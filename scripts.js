@@ -162,7 +162,7 @@ let respostaFase=(fase)=>{
     
                     }
                     else if(resposta7.toUpperCase()=='B'){
-                        alert('Chaves aceita te ajudar');
+                        alert('Chaves aceita te ajudar.');
                         window.location.href='../madruga/madruga_fase_2.html';
                         respostaLoop=true;
                         break;
@@ -177,7 +177,7 @@ let respostaFase=(fase)=>{
                     case 'fase2-ma':
                         let resposta8=prompt('Você concorda com o acordo? \nA: Concorda,dá um dinheiro no ato.\nB: Já que você mal tem dinheiro, diz que irá dar pra ele depois que resolver tudo\nResponda com A ou B');
                         if(resposta8.toUpperCase()=='A'){
-                            alert('Ótima escolha.Agora basta saber o que vocês irão fazer.');
+                            alert('Ótima escolha. Agora basta saber o que vocês irão fazer.');
                             window.location.href='../madruga/g-over-madruga2.html';
                             respostaLoop=true;
                             break;
@@ -199,14 +199,14 @@ let respostaFase=(fase)=>{
                         case 'fase3-ma':
                             let resposta9=prompt('Como você irá fugir ?\nA: Envia Chaves para distrair o cobrador.\nB: Aceita a idéia do garoto e pula rapidamente no barril.\nResponda com A ou B');
                             if(resposta9.toUpperCase()=='B'){
-                                alert('');
+                                alert('você sai correndo e pula direto no barril.');
                                 window.location.href='../madruga/endgame-madruga.html';
                                 respostaLoop=true;
                                 break;
             
                             }
                             else if(resposta9.toUpperCase()=='A'){
-                                alert('Errou!');
+                                alert('Chaves chama a atenção de Sr. Barriga.');
                                 window.location.href='../madruga/g-over-madruga3.html';
                                 respostaLoop=true;
                                 break;
@@ -216,22 +216,12 @@ let respostaFase=(fase)=>{
                             else{
                                 alert('Opção Inválida. Tente novamente !');
                                 break;
-                            }
-
-
-                    
-            
-        
-
-
-
-
-                       
+                            }                    
+                             
                    
         }
 
     }
-
 
 }
 

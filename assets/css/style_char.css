@@ -40,8 +40,6 @@ body{
 }
 
 
-
-
 .botao{
     height:40px;
     width: 100px;
@@ -72,8 +70,78 @@ footer {
     position: absolute;
     bottom:0;
     font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+    
+}
 
+@media screen and (min-width:1280px){
+
+    #container-intro{
+        height:250px;
+        width: 950px;
+        padding:45px;
+        font-size: 24px;
+
+    }
+
+    header{
+        font-size:90px;
+    }
+
+    .container{
+        margin: 10% auto 10%;
+        background-color:var(--main-dialog-color);
+        box-shadow: 1px 1px 10px 2px black;   
+        height:280px;
+        width: 80vw;
+        padding:35px;
+        font-size:1.5em;
+        text-align:center;
+        color:rgb(94, 51, 51);
+    
+    }
+
+}
+
+
+@media screen and (max-width:700px){
+
+    header{
+        font-size:50px;
+    }
+
+    .container-choice-interno{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height:80vh;
+        
+    
+    }
+
+    footer{
+        position: relative;
+    }
+
+    .container{
+        margin: 10% auto 10%;
+        background-color:var(--main-dialog-color);
+        box-shadow: 1px 1px 10px 2px black;   
+        height:fit-content;
+        width: 80vw;
+        padding:25px;
+        font-size:1.2em;
+        text-align:center;
+        color:rgb(94, 51, 51);
+    
+    }
+
+    
 
     
 }
+
+
+
 
