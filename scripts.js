@@ -1,5 +1,4 @@
 
-
 let botaoInicio= ()=>{
 
     document.getElementById('container-intro').style.display='none';
@@ -15,10 +14,13 @@ let botaoVolta=()=>{
 }
 
 let respostaFase=(fase)=>{
-
     let respostaLoop=false;
+    
 
-    while(!respostaLoop){
+
+    while(respostaLoop==false){
+
+       
 
         switch(fase){
             case 'fase1-ch':
@@ -64,12 +66,14 @@ let respostaFase=(fase)=>{
             case 'fase3-ch':
                 let resposta3=prompt('O que você faz ? \nA: Sai correndo em direção ao gato e o salva \n B: Espera o gato voltar\nResponda com A ou B');
                 if(resposta3.toUpperCase()=='A'){
+                    alert('Você sai correndo e salva o gato antes que qualquer mal lhe aconteça.');
                     window.location.href='../chaves/endgame-chaves.html';
                     respostaLoop=true;
                     break;
 
                 }
-                else if(resposta3.toUpperCase()='B'){
+                else if(resposta3.toUpperCase()=='B'){
+                    alert('Ruas movimentadas não são lugares seguros para pequenos animais...');
                     window.location.href='../chaves/g-over-chaves3.html';
                     respostaLoop=true;
                     break;
@@ -216,7 +220,11 @@ let respostaFase=(fase)=>{
                             else{
                                 alert('Opção Inválida. Tente novamente !');
                                 break;
-                            }                    
+                            }
+                            
+                            default:
+                                alert('Fase não configurada. Procure o suporte.');
+                                break;
                              
                    
         }
