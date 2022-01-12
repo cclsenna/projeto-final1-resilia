@@ -121,7 +121,7 @@ footer {
     }
 
     footer{
-        position: relative;
+        position: absolute;
     }
 
     .container{
